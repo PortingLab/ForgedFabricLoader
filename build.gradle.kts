@@ -32,7 +32,7 @@ val versionYarn: String by project
 java.sourceCompatibility = JavaVersion.VERSION_17
 java.targetCompatibility = JavaVersion.VERSION_17
 
-group = "org.portinglib.forgedfabricloader"
+group = "org.portinglab.forgedfabricloader"
 version = "$versionForgedLoader+$versionLoaderUpstream+$versionMc"
 
 license {

@@ -29,9 +29,11 @@ val versionForge: String by rootProject
 val versionLoaderUpstream: String by rootProject
 val versionYarn: String by project
 
+java.sourceCompatibility = JavaVersion.VERSION_17
+java.targetCompatibility = JavaVersion.VERSION_17
+
 group = "org.portinglib.forgedfabricloader"
 version = "$versionForgedLoader+$versionLoaderUpstream+$versionMc"
-
 
 license {
     header("HEADER")

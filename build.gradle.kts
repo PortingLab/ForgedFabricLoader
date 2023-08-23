@@ -24,19 +24,15 @@ plugins {
     id("dev.architectury.loom") version "1.2-SNAPSHOT" apply false
 }
 
+val versionForgedLoader: String by rootProject
 val versionMc: String by rootProject
 val versionForge: String by rootProject
 val versionLoaderUpstream: String by rootProject
 val versionYarn: String by project
 
-group = "org.portinglib.forged"
-version = "0.0.0-SNAPSHOT"
+group = "org.portinglib.forgedfabricloader"
+version = "$versionForgedLoader+$versionLoaderUpstream+$versionMc"
 
-gitVersioning.apply {
-    rev {
-        version = "\${describe.tag.version.major}.\${describe.tag.version.minor}.\${describe.tag.version.patch.plus.describe.distance}+$versionLoaderUpstream+$versionMc"
-    }
-}
 
 license {
     header("HEADER")
@@ -140,14 +136,7 @@ publishing {
     }
 
     repositories {
-        maven {
-            name = "Su5eD"
-            url = uri("https://maven.su5ed.dev/releases")
-            credentials {
-                username = System.getenv("MAVEN_USER") ?: "not"
-                password = System.getenv("MAVEN_PASSWORD") ?: "set"
-            }
-        }
+
     }
 }
 

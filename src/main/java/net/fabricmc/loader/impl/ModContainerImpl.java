@@ -21,6 +21,7 @@ import net.fabricmc.loader.api.metadata.ModOrigin;
 import net.fabricmc.loader.impl.discovery.BuiltinMetadataWrapper;
 import net.fabricmc.loader.impl.metadata.LoaderModMetadata;
 import net.fabricmc.loader.impl.metadata.ModOriginImpl;
+import net.minecraftforge.fml.loading.moddiscovery.ModInfo;
 import net.minecraftforge.forgespi.language.IModInfo;
 
 import java.nio.file.Path;
@@ -29,17 +30,17 @@ import java.util.stream.Collectors;
 
 @SuppressWarnings("deprecation")
 public class ModContainerImpl extends net.fabricmc.loader.ModContainer {
-    private final IModInfo modInfo;
+    private final ModInfo modInfo;
     private final LoaderModMetadata metadata;
     private final ModOrigin origin;
     private final Collection<String> childModIds;
 
-    public ModContainerImpl(IModInfo modInfo) {
+    public ModContainerImpl(ModInfo modInfo) {
         this(modInfo, Optional.ofNullable((LoaderModMetadata) modInfo.getOwningFile().getFileProperties().get("metadata"))
                 .orElseGet(() -> new BuiltinMetadataWrapper(new FMLModMetadata(modInfo))));
     }
 
-    public ModContainerImpl(IModInfo modInfo, LoaderModMetadata metadata) {
+    public ModContainerImpl(ModInfo modInfo, LoaderModMetadata metadata) {
         this.modInfo = modInfo;
         this.metadata = metadata;
         this.origin = new ModOriginImpl(getRootPaths());

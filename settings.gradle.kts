@@ -19,5 +19,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = "ForgedFabricLoader"
+rootProject.name = "forged-fabric-loader"
 

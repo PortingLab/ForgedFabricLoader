@@ -31,7 +31,7 @@ val versionYarn: String by project
 
 group = "org.portinglib.forgedfabricloader"
 version = "$versionForgedLoader+$versionLoaderUpstream+$versionMc"
-
+base.archivesBaseName = "forged-fabric-loader"
 
 license {
     header("HEADER")

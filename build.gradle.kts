@@ -18,7 +18,6 @@ plugins {
     java
     `maven-publish`
     id("net.minecraftforge.gradle") version "[6.0,6.2)"
-    id("me.qoomon.git-versioning") version "6.3.+"
     id("org.cadixdev.licenser") version "0.6.1"
     // Used for mapping tools only, provides TSRG writer on top of mappings-io
     id("dev.architectury.loom") version "1.2-SNAPSHOT" apply false

@@ -1,6 +1,6 @@
 # Forged Fabric Loader
 
-[![Build](https://github.com/PortingLab/ForgedFabricLoader/actions/workflows/build.yml/badge.svg?branch=1.19.2)](https://github.com/PortingLab/ForgedFabricLoader/actions/workflows/build.yml)
+[![Build](https://github.com/PortingLab/ForgedFabricLoader/actions/workflows/build.yml/badge.svg?branch=1.18.2)](https://github.com/PortingLab/ForgedFabricLoader/actions/workflows/build.yml)
 [![License](https://img.shields.io/github/license/sinytra/ForgifiedFabricLoader?color=orange)](https://github.com/Sinytra/ForgifiedFabricLoader/blob/1.20.1/LICENSE)
 
 A Forgified Fabric Loader 1.16.5, 1.18.2, 1.19.2 backport.
